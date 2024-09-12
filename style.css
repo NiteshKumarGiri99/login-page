@@ -1,0 +1,92 @@
+/* General body styling with a background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('first.jpg'); /* Use your uploaded image as background */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure the height covers the full viewport */
+    display: flex;
+    justify-content: flex-start; /* Align the login box to the left */
+    align-items: center; /* Vertically center the login box */
+}
+
+/* Styling for the login box/container */
+.login-container {
+    background: rgba(170, 213, 240, 0.9); /* Light blue background with transparency */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 300px; /* Fixed width for the login box */
+    margin-left: 50px; /* Add left margin for spacing from the edge */
+}
+
+/* Styling for all input fields (email, password, checkbox) */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Margin to space out the input fields */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
+}
+
+/* Styling for the submit button */
+button {
+    width: 150px; /* Fixed width for the button */
+    padding: 10px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Styling for the "Remember Me" checkbox group */
+.checkbox-group {
+    display: flex;
+    align-items: center; /* Ensure checkbox and label are aligned vertically */
+    margin-bottom: 15px;
+    font-size: 14px; /* Adjust the font size for better alignment */
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+    width: auto; /* Ensure the checkbox maintains a proper size */
+}
+
+/* Styling for the "Forgot Password" link */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #007bff; /* Blue text */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Error message styling */
+#responseMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* Make the login box take more width on small screens */
+        margin-left: 20px; /* Reduce the left margin */
+    }
+}
